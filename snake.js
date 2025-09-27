@@ -118,6 +118,16 @@ document.addEventListener("keydown", (e) => {
 });
 
 
+const bgMusic = document.getElementById("bg-music");
+
+document.addEventListener("keydown", () => {
+  if (bgMusic.paused) {
+    bgMusic.play();
+  }
+});
+
+
+
 
 // Initialize and start
 initializeGameBoard();
